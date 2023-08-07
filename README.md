@@ -9,14 +9,14 @@ Practice web scraping (fetching and extracting information) and processing the c
 
 ## Includes
 
-> Python
-> JSON
-> Pickle
-> Requests
-> Spacy
-> SpactTextBlob.spacytextblob from SpacyTextBlob
-> Matplotlib.pyplot as plt
-> Counter
+- Python
+- JSON
+- Pickle
+- Requests
+- Spacy
+- SpactTextBlob.spacytextblob from SpacyTextBlob
+- Matplotlib.pyplot as plt
+- Counter
 
 ## Rubric
 
