@@ -15662,7 +15662,7 @@ Posted in car hacks, Engineering, Featured, Laser Hacks, SliderTagged laser, las
 <span class="k">def</span> <span class="nf">we_care_about</span><span class="p">(</span><span class="n">token</span><span class="p">):</span>
     <span class="k">return</span> <span class="ow">not</span> <span class="p">(</span><span class="n">token</span><span class="o">.</span><span class="n">is_space</span> <span class="ow">or</span> <span class="n">token</span><span class="o">.</span><span class="n">is_punct</span> <span class="ow">or</span> <span class="n">token</span><span class="o">.</span><span class="n">is_stop</span><span class="p">)</span>
 
-<span class="n">interesting_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">token</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">doc</span> <span class="k">if</span> <span class="n">we_care_about</span><span class="p">(</span><span class="n">token</span><span class="p">)]</span>
+<span class="n">interesting_tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">token</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">doc</span> <span class="k">if</span> <span class="n">we_care_about</span><span class="p">(</span><span class="n">token</span><span class="p">)]</span>
 
 <span class="n">token_freq</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">interesting_tokens</span><span class="p">))</span>
 
@@ -15687,7 +15687,7 @@ Posted in car hacks, Engineering, Featured, Laser Hacks, SliderTagged laser, las
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The most common tokens and their respective frequencies are as follows:[(&#39;laser&#39;, 29), (&#39;headlights&#39;, 17), (&#39;technology&#39;, 10), (&#39;headlight&#39;, 10), (&#39;LED&#39;, 10)]
+<pre>The most common tokens and their respective frequencies are as follows:[(&#39;laser&#39;, 35), (&#39;headlights&#39;, 19), (&#39;headlight&#39;, 11), (&#39;technology&#39;, 10), (&#39;led&#39;, 10)]
 </pre>
 </div>
 </div>
